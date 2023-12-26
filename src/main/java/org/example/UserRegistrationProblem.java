@@ -9,5 +9,12 @@ public class UserRegistrationProblem {
         else
             throw new Exception("You enter Invalid First name as a user: ");
     }
+
+    public boolean lastNameValidation(String lastName) throws Exception {
+        if (Pattern.matches("[A-Z][a-z]{2,}", lastName))
+            return true;
+        else
+            throw new Exception("You enter Invalid First name as a user: ");
+    }
     }
 
