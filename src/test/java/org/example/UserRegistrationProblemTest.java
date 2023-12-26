@@ -23,4 +23,14 @@ public class UserRegistrationProblemTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void emailTest() {
+        boolean email = false;
+        try {
+            email = userRegistrationProblem.emailValidation("abc-100@yahoo.com");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
