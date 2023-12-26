@@ -33,4 +33,14 @@ public class UserRegistrationProblemTest {
             e.printStackTrace();
         }
     }
+    @Test
+    public void validateMobilePositive() {
+        boolean phone = false;
+        try {
+            phone = userRegistrationProblem.phoneNumber("+91-9967891679");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }
