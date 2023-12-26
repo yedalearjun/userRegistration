@@ -60,5 +60,14 @@ public class UserRegistrationProblemTest {
             e.printStackTrace();
         }
     }
+    @Test
+    public void validatePassword3() {
+        boolean pass3 = false;
+        try {
+            pass3 = userRegistrationProblem.passwordValidation4("Kuldeep@947");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 }
