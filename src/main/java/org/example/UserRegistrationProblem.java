@@ -47,6 +47,5 @@ public class UserRegistrationProblem {
             throw new Exception("You Enter invalid Password");
     }
 
-
 }
 
